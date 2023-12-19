@@ -1,5 +1,9 @@
 name: coolint
 description: Recommended lints for cool apps, packages, and plugins to encourage good coding practices.
+ 
+repository: https://github.com/coolosos/coolint
+issue_tracker: https://github.com/coolosos/coolint/issues
+homepage: https://github.com/coolosos
 
 version: 1.0.1
 
