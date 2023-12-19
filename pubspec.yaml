@@ -1,7 +1,7 @@
 name: coolint
 description: Recommended lints for cool apps, packages, and plugins to encourage good coding practices.
 
-version: 1.0.0
+version: 1.0.1
 
 environment:
   sdk: ">=3.0.1 <4.0.0"
