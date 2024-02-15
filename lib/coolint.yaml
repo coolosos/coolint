@@ -16,6 +16,7 @@ analyzer:
     - "**.config.dart"
     - "**/*.module.dart"
     - "**/*.freezed.dart"
+    - "**/*.mapper.dart"
 
   language:
     strict-casts: false
