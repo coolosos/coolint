@@ -1,3 +1,8 @@
+## 1.0.3
+
+- Update flutter_lints to 3.0.2
+- Updates minimum supported SDK version to Dart 3.3.1.
+
 ## 1.0.2
 
 - Update to ignore .mappers.dart
