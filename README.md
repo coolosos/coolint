@@ -11,7 +11,7 @@ This package provides lint rules for Dart and Flutter.
 
 ```yaml
 dev_dependencies:
-  coolint: ^1.0.3
+  coolint: ^2.0.1
 ```
 
 ###  2. Add configuration to `analysis_options.yaml`

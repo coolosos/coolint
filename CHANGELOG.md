@@ -1,7 +1,10 @@
+## 2.0.1
+
+- Update flutter_lints to 5.0.0
+
 ## 2.0.0
 
 - Update flutter_lints to 4.0.0
-
 ## 1.0.3
 
 - Update flutter_lints to 3.0.2
