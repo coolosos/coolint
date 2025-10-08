@@ -1,0 +1,279 @@
+#------------------------------------------------------------------------------
+# ANALYZER
+#------------------------------------------------------------------------------
+analyzer:
+  # Exclude files from analysis. Useful for ignoring generated files.
+  exclude:
+    - "**/*.g.dart"
+    - "**/*.gr.dart"
+    - "**.config.dart"
+    - "**/*.module.dart"
+    - "**/*.freezed.dart"
+    - "**/*.mapper.dart"
+    - "**/__brick__/**"
+
+  # Define the severity of certain analyzer errors.
+  # Possible values: ignore, info, warning, error.
+  errors:
+    missing_required_param: error
+    missing_return: error
+    must_be_immutable: error
+    invalid_assignment: error
+    only_throw_errors: error
+    invalid_use_of_internal_member: error
+    todo: ignore
+
+  # Language feature configuration.
+  language:
+    strict-casts: false
+    # strict-inference: true # Commented out for future activation
+    # strict-raw-types: true # Commented out for future activation
+
+#------------------------------------------------------------------------------
+# LINTER
+#------------------------------------------------------------------------------
+linter:
+  rules:
+    #==========================================================================
+    # Error Prevention
+    #==========================================================================
+    - await_only_futures
+    - collection_methods_unrelated_type
+    - control_flow_in_finally
+    - dangling_library_doc_comments
+    - empty_catches
+    - hash_and_equals
+    - implicit_call_tearoffs
+    - invalid_case_patterns
+    - invalid_runtime_check_with_js_interop_types
+    - no_duplicate_case_values
+    - no_wildcard_variable_uses
+    - null_check_on_nullable_type_parameter
+    - overridden_fields
+    - recursive_getters
+    - strict_top_level_inference
+    - type_literal_in_constant_pattern
+    - unintended_html_in_doc_comment
+    - unawaited_futures
+    - unrelated_type_equality_checks
+    - use_rethrow_when_possible
+    - use_string_in_part_of_directives
+    - valid_regexps
+    - void_checks
+    - only_throw_errors
+    - avoid_dynamic_calls
+    - matching_super_parameters
+    - avoid_catches_without_on_clauses
+    - avoid_equals_and_hash_code_on_mutable_classes
+    - avoid_returning_this
+    - avoid_void_async
+    - cancel_subscriptions
+    - close_sinks
+    - deprecated_consistency
+    - no_adjacent_strings_in_list
+    - no_runtimeType_toString
+    - noop_primitive_operations
+    - parameter_assignments
+    - prefer_void_to_null
+    - test_types_in_equals
+    - throw_in_finally
+    - unnecessary_null_checks
+    - unnecessary_statements
+    - annotate_redeclares
+    - avoid_double_and_int_checks
+    - avoid_futureor_void
+    - avoid_implementing_value_types
+    - avoid_js_rounded_ints
+    - avoid_positional_boolean_parameters
+    - avoid_private_typedef_functions
+    - cast_nullable_to_non_nullable
+    - implicit_reopen
+    - no_default_cases
+    - no_self_assignments
+    - switch_on_type
+    - unnecessary_null_aware_operator_on_extension_on_nullable
+    - unreachable_from_main
+    - conditional_uri_does_not_exist
+    # - avoid_catching_errors
+    # - avoid_classes_with_only_static_members
+    # - avoid_setters_without_getters
+    # - avoid_slow_async_io
+    # - one_member_abstracts
+
+    #==========================================================================
+    # Style & Formatting
+    #==========================================================================
+    - annotate_overrides
+    - avoid_empty_else
+    - avoid_function_literals_in_foreach_calls
+    - avoid_init_to_null
+    - avoid_renaming_method_parameters
+    - avoid_return_types_on_setters
+    - avoid_returning_null_for_void
+    - avoid_shadowing_type_parameters
+    - avoid_types_as_parameter_names
+    - camel_case_extensions
+    - camel_case_types
+    - curly_braces_in_flow_control_structures
+    - empty_constructor_bodies
+    - empty_statements
+    - file_names
+    - non_constant_identifier_names
+    - prefer_adjacent_string_concatenation
+    - prefer_conditional_assignment
+    - prefer_function_declarations_over_variables
+    - prefer_generic_function_type_aliases
+    - prefer_is_empty
+    - prefer_is_not_empty
+    - prefer_typing_uninitialized_variables
+    - provide_deprecation_message
+    - slash_for_doc_comments
+    - type_init_formals
+    - unnecessary_brace_in_string_interps
+    - unnecessary_overrides
+    - use_function_type_syntax_for_parameters
+    - always_declare_return_types
+    - always_put_required_named_parameters_first
+    - lines_longer_than_80_chars
+    - prefer_single_quotes
+    - require_trailing_commas
+    - sort_constructors_first
+    - sort_unnamed_constructors_first
+    - type_annotate_public_apis
+    - unnecessary_parenthesis
+    - prefer_interpolation_to_compose_strings
+    - avoid_escaping_inner_quotes
+    - prefer_int_literals
+    - unnecessary_library_name
+    - unnecessary_underscores
+    # - constant_identifier_names
+    - directives_ordering
+    - eol_at_end_of_file
+    - omit_local_variable_types
+    - prefer_constructors_over_static_methods
+    - unnecessary_raw_strings
+    - combinators_ordering
+    - join_return_with_assignment
+    - missing_code_block_language_in_doc_comment
+    - specify_nonobvious_property_types
+    - document_ignores
+    - leading_newlines_in_multiline_strings
+    - missing_whitespace_between_adjacent_strings
+    - prefer_asserts_with_message
+    - prefer_if_elements_to_conditional_expressions
+    - use_raw_strings
+    # - always_put_control_body_on_new_line
+    # - avoid_redundant_argument_values
+    # - avoid_types_on_closure_parameters
+    - cascade_invocations
+    # - comment_references
+    # - literal_only_boolean_expressions
+    # - prefer_foreach
+    # - use_named_constants
+
+    #==========================================================================
+    # Unnecessary Code & Redundancy
+    #==========================================================================
+    - unnecessary_const
+    - unnecessary_constructor_name
+    - unnecessary_getters_setters
+    - unnecessary_late
+    - unnecessary_new
+    - unnecessary_string_escapes
+    - unnecessary_string_interpolations
+    - unnecessary_this
+    - unnecessary_to_list_in_spreads
+    - avoid_unused_constructor_parameters
+    - unnecessary_await_in_return
+    - unnecessary_lambdas
+    - unnecessary_null_aware_assignments
+    - unnecessary_null_in_if_null_operators
+    - unnecessary_nullable_for_final_variable_declarations
+    - unnecessary_ignore
+    - unnecessary_library_directive
+    - unnecessary_unawaited
+
+    #==========================================================================
+    # Performance & Best Practices
+    #==========================================================================
+    - prefer_collection_literals
+    - prefer_contains
+    - prefer_final_fields
+    - prefer_for_elements_to_map_fromIterable
+    - prefer_if_null_operators
+    - prefer_initializing_formals
+    - prefer_inlined_adds
+    - prefer_is_not_operator
+    - prefer_iterable_whereType
+    - prefer_null_aware_operators
+    - prefer_spread_collections
+    - use_super_parameters
+    - avoid_field_initializers_in_const_classes
+    - prefer_asserts_in_initializer_lists
+    - prefer_const_constructors
+    - prefer_const_constructors_in_immutables
+    - prefer_const_declarations
+    - prefer_const_literals_to_create_immutables
+    - prefer_final_in_for_each
+    - prefer_final_locals
+    - prefer_null_aware_method_calls
+    - tighten_type_of_initializing_formals
+    - use_enums
+    - avoid_print
+    - avoid_single_cascade_in_expression_statements
+    - use_if_null_to_convert_nulls_to_bools
+    - use_is_even_rather_than_modulo
+    - use_late_for_private_fields_and_variables
+    - use_string_buffers
+    - use_test_throws_matchers
+    - use_to_and_as_if_applicable
+    - use_truncating_division
+
+    #==========================================================================
+    # Pub & Imports
+    #==========================================================================
+    - avoid_relative_lib_imports
+    - depend_on_referenced_packages
+    - implementation_imports
+    - library_annotations
+    - library_prefixes
+    - library_private_types_in_public_api
+    - no_leading_underscores_for_library_prefixes
+    - no_leading_underscores_for_local_identifiers
+    - package_names
+    - secure_pubspec_urls
+    # - sort_pub_dependencies
+
+#------------------------------------------------------------------------------
+# DART CODE METRICS
+#------------------------------------------------------------------------------
+dart_code_metrics:
+  # Code patterns to avoid.
+  anti-patterns:
+    - long-method
+    - long-parameter-list
+
+  # Complexity and size metrics.
+  metrics:
+    cyclomatic-complexity: 20
+    maximum-nesting-level: 5
+    number-of-parameters: 4
+    source-lines-of-code: 50
+
+  # Exclude files from metrics.
+  metrics-exclude:
+    - test/**
+    - "**/*.g.dart"
+    - "**/*.gr.dart"
+    - "**.config.dart"
+    - "**/*.module.dart"
+    - "**/*.freezed.dart"
+    - "**/*.mapper.dart"
+    - "**/__brick__/**"
+  # Additional metric rules.
+  rules:
+    - newline-before-return
+    - no-boolean-literal-compare
+    - no-empty-block
+    - prefer-conditional-expressions
+    - no-equal-then-else

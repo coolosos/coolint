@@ -1,13 +1,14 @@
 name: coolint
+version: 2.1.1
 description: Recommended lints for cool apps, packages, and plugins to encourage good coding practices.
 
 repository: https://github.com/coolosos/coolint
 issue_tracker: https://github.com/coolosos/coolint/issues
 homepage: https://github.com/coolosos
 
-version: 2.1.0
+topics:
+  - analysis
+  - lints
 
 environment:
-  sdk: ">=3.7.0 <4.0.0"
-dependencies:
-  flutter_lints: ">=5.0.0 <7.0.0"
+  sdk: ^3.8.0
