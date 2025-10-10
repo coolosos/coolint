@@ -1,3 +1,9 @@
+## 2.1.2
+
+### Changed
+- Disabled `avoid_catches_without_on_clauses` and `lines_longer_than_80_chars` rules by commenting them out.
+- Removed `no-equal-then-else` from `dart_code_metrics` rules.
+
 ## 2.1.1
 
 ### Added
