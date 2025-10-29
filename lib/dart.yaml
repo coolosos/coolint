@@ -19,6 +19,7 @@ analyzer:
     only_throw_errors: error
     invalid_use_of_internal_member: error
     todo: ignore
+    unrelated_type_equality_checks: error
 
   # Language feature configuration.
   language:
