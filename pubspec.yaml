@@ -11,4 +11,4 @@ topics:
   - lints
 
 environment:
-  sdk: ^3.8.0
+  sdk: ^3.13.2
