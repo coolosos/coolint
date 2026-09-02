@@ -1,3 +1,24 @@
+## 3.0.0
+
+### BREAKING
+- Minimum Dart SDK version bumped from `^3.8.0` to `^3.13.2`.
+
+### Added
+- 18 new lint rules: `no_dynamic_casts`, `avoid_type_to_string`, `unnecessary_breaks`,
+  `no_literal_bool_comparisons`, `simple_directive_paths`, `prefer_mixin`,
+  `var_with_no_type_annotation`, `unnecessary_const_in_enum_constructor`,
+  `unnecessary_primary_constructor_body`, `initialize_in_field_declaration`,
+  `async_return_with_no_await`, `empty_container_bodies`, `simplify_variable_pattern`,
+  `use_named_constants`, `use_setters_to_change_properties`, `null_closures`,
+  `literal_only_boolean_expressions`, `exhaustive_cases`.
+
+### Changed
+- Reformatted all lint rules in `dart.yaml` from list syntax to explicit map syntax (`rule_name: true`).
+- Replaced `strict-casts: false` with `strict-inference: false` and `strict-raw-types: false` in analyzer config.
+
+### Removed
+- Removed deprecated `dart_code_metrics` section from `dart.yaml`.
+
 ## 2.1.2
 
 ### Changed

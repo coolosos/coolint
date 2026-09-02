@@ -27,7 +27,7 @@ Add `coolint` to your `pubspec.yaml` file under `dev_dependencies`.
 
 ```yaml
 dev_dependencies:
-  coolint: ^2.1.1 # Make sure to use the latest version
+  coolint: ^3.0.0 # Make sure to use the latest version
 ```
 
 ### 2. Configure analysis_options.yaml
