@@ -3,6 +3,7 @@
 ### BREAKING
 - Minimum Dart SDK version bumped from `^3.8.0` to `^3.13.2`.
 - Enabled strict mode in analyzer (`strict-casts: true`, `strict-inference: true`, `strict-raw-types: true`).
+- Removed deprecated `coolint.yaml` entrypoint in favor of explicit `flutter.yaml` or `dart.yaml`.
 
 ### Added
 - New preset `package:coolint/flutter_package.yaml` specifically tailored for public Flutter UI packages and widget libraries (includes `diagnostic_describe_all_properties` and `public_member_api_docs`).
@@ -39,6 +40,7 @@
 - Reformatted all lint rules in `dart.yaml` from list syntax to explicit map syntax (`rule_name: true`).
 
 ### Removed
+- Removed deprecated `lib/coolint.yaml` (use `package:coolint/flutter.yaml` or `package:coolint/dart.yaml`).
 - Removed deprecated `dart_code_metrics` section from `dart.yaml`.
 - Removed deprecated lint rules: `avoid_private_typedef_functions` and `use_if_null_to_convert_nulls_to_bools`.
 

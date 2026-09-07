@@ -42,8 +42,6 @@ Include the Flutter ruleset in your `analysis_options.yaml` file. This contains 
 include: package:coolint/flutter.yaml
 ```
 
-*Note: For backward compatibility, `include: package:coolint/coolint.yaml` also maps to `flutter.yaml`.*
-
 #### For Public UI Packages & Widget Libraries
 
 If you are publishing a Flutter UI package, design system, or widget library to pub.dev, use the dedicated package ruleset (enforces `diagnostic_describe_all_properties` and `public_member_api_docs`):
