@@ -2,22 +2,43 @@
 
 ### BREAKING
 - Minimum Dart SDK version bumped from `^3.8.0` to `^3.13.2`.
+- Enabled strict mode in analyzer (`strict-casts: true`, `strict-inference: true`, `strict-raw-types: true`).
 
 ### Added
-- 18 new lint rules: `no_dynamic_casts`, `avoid_type_to_string`, `unnecessary_breaks`,
-  `no_literal_bool_comparisons`, `simple_directive_paths`, `prefer_mixin`,
-  `var_with_no_type_annotation`, `unnecessary_const_in_enum_constructor`,
-  `unnecessary_primary_constructor_body`, `initialize_in_field_declaration`,
-  `async_return_with_no_await`, `empty_container_bodies`, `simplify_variable_pattern`,
-  `use_named_constants`, `use_setters_to_change_properties`, `null_closures`,
-  `literal_only_boolean_expressions`, `exhaustive_cases`.
+- 25 new lint rules:
+  - `async_return_with_no_await`
+  - `avoid_bool_literals_in_conditional_expressions`
+  - `avoid_multiple_declarations_per_line`
+  - `avoid_type_to_string`
+  - `avoid_types_on_closure_parameters`
+  - `comment_references`
+  - `diagnostic_describe_all_properties` (in `flutter.yaml`)
+  - `empty_container_bodies`
+  - `exhaustive_cases`
+  - `initialize_in_field_declaration`
+  - `literal_only_boolean_expressions`
+  - `no_dynamic_casts`
+  - `no_literal_bool_comparisons`
+  - `null_closures`
+  - `prefer_mixin`
+  - `simple_directive_paths`
+  - `simplify_variable_pattern`
+  - `unnecessary_breaks`
+  - `unnecessary_const_in_enum_constructor`
+  - `unnecessary_primary_constructor_body`
+  - `unnecessary_type_name_in_constructor`
+  - `use_declaring_parameters`
+  - `use_named_constants`
+  - `use_null_aware_elements`
+  - `use_setters_to_change_properties`
+- Added default exclude patterns (`.github/**`, `build/**`, `**/.dart_tool/**`) in `dart.yaml` and platform folders (`android/**`, `ios/**`) in `flutter.yaml`.
 
 ### Changed
 - Reformatted all lint rules in `dart.yaml` from list syntax to explicit map syntax (`rule_name: true`).
-- Replaced `strict-casts: false` with `strict-inference: false` and `strict-raw-types: false` in analyzer config.
 
 ### Removed
 - Removed deprecated `dart_code_metrics` section from `dart.yaml`.
+- Removed deprecated lint rules: `avoid_private_typedef_functions` and `use_if_null_to_convert_nulls_to_bools`.
 
 ## 2.1.2
 
