@@ -1,5 +1,12 @@
 include: package:coolint/dart.yaml
 
+analyzer:
+  exclude:
+    - "ios/**"
+    - "**/ios/**"
+    - "android/**"
+    - "**/android/**"
+
 linter:
   rules:
     #==========================================================================

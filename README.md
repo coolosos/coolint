@@ -27,26 +27,32 @@ Add `coolint` to your `pubspec.yaml` file under `dev_dependencies`.
 
 ```yaml
 dev_dependencies:
-  coolint: ^2.1.1 # Make sure to use the latest version
+  coolint: ^3.0.0 # Make sure to use the latest version
 ```
 
 ### 2. Configure analysis_options.yaml
 
-`coolint` provides two sets of rules: one for pure Dart projects and one for Flutter projects.
+`coolint` provides modular rulesets tailored to your project type:
 
-#### For Flutter Projects
+#### For Flutter Apps
 
-Include the Flutter ruleset in your `analysis_options.yaml` file. This includes all the Dart and Flutter specific rules.
+Include the Flutter ruleset in your `analysis_options.yaml` file. This contains all Dart and Flutter-specific best practices without noisy debug-fill requirements:
 
 ```yaml
 include: package:coolint/flutter.yaml
 ```
 
-*Note: For backward compatibility, you can also use `include: package:coolint/coolint.yaml`, which is the same as `flutter.yaml`.*
+#### For Public UI Packages & Widget Libraries
+
+If you are publishing a Flutter UI package, design system, or widget library to pub.dev, use the dedicated package ruleset (enforces `diagnostic_describe_all_properties` and `public_member_api_docs`):
+
+```yaml
+include: package:coolint/flutter_package.yaml
+```
 
 #### For Pure Dart Projects
 
-If you are working on a pure Dart project (e.g., a command-line tool or a server-side application), you can use the Dart-only ruleset.
+If you are working on a pure Dart project (e.g., CLI tools, backend servers, or utility packages), use the pure Dart ruleset:
 
 ```yaml
 include: package:coolint/dart.yaml

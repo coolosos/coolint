@@ -1,3 +1,49 @@
+## 3.0.0
+
+### BREAKING
+- Minimum Dart SDK version bumped from `^3.8.0` to `^3.13.2`.
+- Enabled strict mode in analyzer (`strict-casts: true`, `strict-inference: true`, `strict-raw-types: true`).
+- Removed deprecated `coolint.yaml` entrypoint in favor of explicit `flutter.yaml` or `dart.yaml`.
+
+### Added
+- New preset `package:coolint/flutter_package.yaml` specifically tailored for public Flutter UI packages and widget libraries (includes `diagnostic_describe_all_properties` and `public_member_api_docs`).
+- 25 new lint rules:
+  - `async_return_with_no_await`
+  - `avoid_bool_literals_in_conditional_expressions`
+  - `avoid_multiple_declarations_per_line`
+  - `avoid_type_to_string`
+  - `avoid_types_on_closure_parameters`
+  - `comment_references`
+  - `diagnostic_describe_all_properties` (in `flutter_package.yaml`)
+  - `empty_container_bodies`
+  - `exhaustive_cases`
+  - `initialize_in_field_declaration`
+  - `literal_only_boolean_expressions`
+  - `no_dynamic_casts`
+  - `no_literal_bool_comparisons`
+  - `null_closures`
+  - `prefer_mixin`
+  - `public_member_api_docs` (in `flutter_package.yaml`)
+  - `simple_directive_paths`
+  - `simplify_variable_pattern`
+  - `unnecessary_breaks`
+  - `unnecessary_const_in_enum_constructor`
+  - `unnecessary_primary_constructor_body`
+  - `unnecessary_type_name_in_constructor`
+  - `use_declaring_parameters`
+  - `use_named_constants`
+  - `use_null_aware_elements`
+  - `use_setters_to_change_properties`
+- Added default exclude patterns (`.github/**`, `build/**`, `**/.dart_tool/**`) in `dart.yaml` and platform folders (`android/**`, `ios/**`) in `flutter.yaml`.
+
+### Changed
+- Reformatted all lint rules in `dart.yaml` from list syntax to explicit map syntax (`rule_name: true`).
+
+### Removed
+- Removed deprecated `lib/coolint.yaml` (use `package:coolint/flutter.yaml` or `package:coolint/dart.yaml`).
+- Removed deprecated `dart_code_metrics` section from `dart.yaml`.
+- Removed deprecated lint rules: `avoid_private_typedef_functions` and `use_if_null_to_convert_nulls_to_bools`.
+
 ## 2.1.2
 
 ### Changed
