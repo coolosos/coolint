@@ -1,4 +1,4 @@
-## 3.0.0
+## 3.0.0-rc.1
 
 ### BREAKING
 - Minimum Dart SDK version bumped from `^3.8.0` to `^3.13.2`.
