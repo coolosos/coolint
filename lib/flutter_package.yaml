@@ -1,0 +1,9 @@
+include: package:coolint/flutter.yaml
+
+linter:
+  rules:
+    #==========================================================================
+    # Public UI Packages & Widget Libraries
+    #==========================================================================
+    diagnostic_describe_all_properties: true
+    public_member_api_docs: true

@@ -5,6 +5,7 @@
 - Enabled strict mode in analyzer (`strict-casts: true`, `strict-inference: true`, `strict-raw-types: true`).
 
 ### Added
+- New preset `package:coolint/flutter_package.yaml` specifically tailored for public Flutter UI packages and widget libraries (includes `diagnostic_describe_all_properties` and `public_member_api_docs`).
 - 25 new lint rules:
   - `async_return_with_no_await`
   - `avoid_bool_literals_in_conditional_expressions`
@@ -12,7 +13,7 @@
   - `avoid_type_to_string`
   - `avoid_types_on_closure_parameters`
   - `comment_references`
-  - `diagnostic_describe_all_properties` (in `flutter.yaml`)
+  - `diagnostic_describe_all_properties` (in `flutter_package.yaml`)
   - `empty_container_bodies`
   - `exhaustive_cases`
   - `initialize_in_field_declaration`
@@ -21,6 +22,7 @@
   - `no_literal_bool_comparisons`
   - `null_closures`
   - `prefer_mixin`
+  - `public_member_api_docs` (in `flutter_package.yaml`)
   - `simple_directive_paths`
   - `simplify_variable_pattern`
   - `unnecessary_breaks`
